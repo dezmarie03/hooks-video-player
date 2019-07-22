@@ -1,0 +1,33 @@
+export const theme = {
+  bgPlaylistColor: 'hsla(225, 18%, 13%, 1)',
+  bgHeaderColor: 'hsla(225, 18%, 23%, 1)',
+  borderItemNumberColor: 'hsla(225, 18%, 31%, 1)',
+  borderItemActiveColor: 'hsla(225, 18%, 35%, 1)',
+  borderItemHoverColor: 'hsla(225, 81%, 62%, 1)',
+  bgPlayedColor: 'hsla(214, 100%, 50%, 1)',
+  bgSwitchHandleColor: 'hsla(225, 18%, 13%, 1)',
+  bgSwitchActiveColor: 'hsla(225, 81%, 62%, 1)',
+  bgSwitchInactiveColor: 'hsla(225, 18%, 67%, 1)',
+  bgScrollTrackColor: 'hsla(360, 100%, 100%, 0)',
+  bgScrollThumbColor: 'hsla(225, 18%, 23%, 1)',
+  bgScrollThumbHoverColor: 'hsla(225, 18%, 33%, 1)',
+  bgUnwatchedColor: 'hsla(225, 81%, 62%, 1)',
+  textColor: 'hsla(360, 100%, 100%, 1)',
+}
+
+export const themeLight = {
+  bgPlaylistColor: 'hsla(360, 100%, 100%, 1)',
+  bgHeaderColor: 'hsla(225, 18%, 73%, 1)',
+  borderItemNumberColor: 'hsla(225, 18%, 80%, 1)',
+  borderItemActiveColor: 'hsla(225, 18%, 73%, 1)',
+  borderItemHoverColor: 'hsla(225, 81%, 62%, 1)',
+  bgPlayedColor: '#7d9979',
+  bgSwitchHandleColor: 'hsla(360, 100%, 100%, 1)',
+  bgSwitchActiveColor: 'hsla(90, 100%, 50%, 1)',
+  bgSwitchInactiveColor: 'hsla(225, 18%, 67%, 1)',
+  bgScrollTrackColor: 'hsla(360, 100%, 100%, 0)',
+  bgScrollThumbColor: 'hsla(225, 18%, 73%, 1)',
+  bgScrollThumbHoverColor: 'hsla(225, 18%, 63%, 1)',
+  bgUnwatchedColor: 'hsla(225, 81%, 62%, 1)',
+  textColor: 'hsla(225, 18%, 23%, 1)',
+}
