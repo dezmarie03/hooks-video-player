@@ -15,6 +15,10 @@ const StyledPlayer = styled.div`
   * {
     box-sizing: border-box;
   }
+
+  @media screen and (max-width: 800px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 export default StyledPlayer;

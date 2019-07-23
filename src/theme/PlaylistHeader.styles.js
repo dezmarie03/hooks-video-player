@@ -5,16 +5,26 @@ const StyledPlaylistHeader = styled.div`
   font-size: 1.6em;
   color: ${props => props.theme.textColor};
   padding: 0 1rem;
-  margin: 0 0 2rem 0;
-  min-height: 80px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+  margin: 0 0 1rem 0;
+  min-height: 60px;
+  display: grid;
+  grid-template-columns: 75% auto;
+  grid-gap: .5rem;
 
-  h4 {
-    font-size: 1.25em;
+  .playlist__header-title,
+  .playlist__header-progress {
+    display: flex;
+    align-items: center;
+  }
+
+  .playlist__header-title h4 {
     color: ${props => props.theme.textColor};
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  .playlist__header-progress {
+    justify-content: flex-end;
   }
 `;
 
