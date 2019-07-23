@@ -16,12 +16,6 @@ const StyledThemeToggle = styled.div`
     margin-left: .5rem;
   }
 
-  .switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-
   .slider {
     position: absolute;
     top: 0;
@@ -44,15 +38,11 @@ const StyledThemeToggle = styled.div`
     transition: 0.4s;
   }
 
-  input:checked + .slider {
+  .switch[aria-checked="true"] .slider {
     background-color: ${props => props.theme.bgSwitchActiveColor};
   }
 
-  input:focus + .slider {
-    box-shadow: 0 0 1px #2196f3;
-  }
-
-  input:checked + .slider:before {
+  .switch[aria-checked="true"] .slider:before {
     transform: translateX(16px);
   }
 

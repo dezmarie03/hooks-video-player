@@ -7,7 +7,7 @@ const withLink = (Component) => (props) => {
     video: {
       ...props.video,
       title: (
-        <Link to={{ pathname: `/${props.video.id}`, autoplay: true }}>
+        <Link to={{ pathname: `/${props.video.id}`, autoplay: true }} tabIndex="0">
           {props.video.title}
         </Link>
       )

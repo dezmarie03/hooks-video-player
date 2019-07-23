@@ -9,10 +9,17 @@ const ThemeToggle = ({
   return (
     <StyledThemeToggle>
       <span>Dark theme:</span>
-      <label className="switch">
-        <input type="checkbox" checked={darkMode} onChange={darkModeCallback} />
+      <div
+        className="switch"
+        tabIndex="0"
+        role="checkbox"
+        aria-checked={darkMode}
+        onClick={darkModeCallback}
+        onKeyPress={darkModeCallback}
+      >
+        <span className="sr-only">Use dark theme</span>
         <span className="slider round" />
-      </label>
+      </div>
     </StyledThemeToggle>
   );
 };
