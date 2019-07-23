@@ -5,13 +5,6 @@ const StyledProgress = styled.div`
   color: ${props => props.theme.textColor};
   font-size: 0.8em;
   padding: .25rem .5rem;
-  margin-right: .5rem;
-  min-width: 50px;
-  height: 20px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
   border-radius: 5px;
 `;
 

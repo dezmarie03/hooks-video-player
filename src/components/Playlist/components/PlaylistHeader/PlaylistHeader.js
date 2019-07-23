@@ -9,10 +9,14 @@ const PlaylistHeader = ({
 }) => {
   return (
     <StyledPlaylistHeader>
-      <h4>{active.title}</h4>
-      <StyledProgress>
-        {active.num} / {total}
-      </StyledProgress>
+      <div className="playlist__header-title">
+        <h4>{active.title}</h4>
+      </div>
+      <div className="playlist__header-progress">
+        <StyledProgress>
+          {active.num} / {total}
+        </StyledProgress>
+      </div>
     </StyledPlaylistHeader>
   );
 };

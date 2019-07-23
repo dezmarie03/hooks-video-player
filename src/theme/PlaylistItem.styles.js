@@ -2,20 +2,19 @@ import styled from 'styled-components';
 
 const StyledPlaylistItem = styled.div`
   background: none;
-  border: 2px dotted ${props => (props.active ? `${props.theme.borderItemActiveColor}` : `transparent`)};
+  border: 2px ${props => (props.active ? `dotted ${props.theme.borderItemActiveColor}` : `solid transparent`)};
   font-size: 1.6em;
   color: ${props => props.theme.textColor};
   min-height: 50px;
-  padding: 10px 20px;
-  margin: 0 0 10px 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  padding: .5rem 1rem;
+  margin: 0 0 .5rem 0;
   border-radius: 5px;
   cursor: pointer;
   position: relative;
   transition: 0.4s;
+  display: grid;
+  grid-template-columns: 30px auto 50px;
+  grid-gap: .75rem;
 
   :hover {
     border: 2px solid ${props => props.theme.borderItemHoverColor};
@@ -25,9 +24,9 @@ const StyledPlaylistItem = styled.div`
     display: block;
     content: '';
     width: 10px;
-    min-height: 10px;
+    height: 10px;
     background-color: ${props => (props.active || props.played ? 'transparent' : `${props.theme.bgUnwatchedColor}`)}
-    border-radius: 50px;
+    border-radius: 50%;
     position: absolute;
     top: 50%;
     left: 4px;
@@ -36,30 +35,25 @@ const StyledPlaylistItem = styled.div`
 
   .player__video-title,
   .player__video-title a {
-    flex-grow: 10;
-    padding: 0 0 0 10px;
     color: ${props => props.theme.textColor};
-    text-align: left;
     text-decoration: none;
     display: block;
   }
 
   .player__video-num {
-    flex-grow: 1;
-    max-width: 30px;
-    padding-right: 2rem;
     border-right: 2px solid ${props => props.theme.borderItemNumberColor};
   }
 
   .player__video-duration {
-    min-width: 45px;
-    color: white;
     font-size: 0.8em;
-    padding: 0 5px;
-    height: 20px;
-    text-align: center;
-    border-radius: 5px;
-    margin: 0 0 0 5px;
+    text-align: right;
+  }
+
+  .player__video-title,
+  .player__video-num,
+  .player__video-duration {
+    display: flex;
+    align-items: center;
   }
 
   .active {

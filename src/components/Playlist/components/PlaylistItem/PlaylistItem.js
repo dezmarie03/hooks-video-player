@@ -15,7 +15,7 @@ const PlaylistItem = ({
       <div className="player__video-title">
         {video.title}
       </div>
-      <div className="player__video-dur">
+      <div className="player__video-duration">
         {video.duration}
       </div>
     </StyledPlaylistItem>
