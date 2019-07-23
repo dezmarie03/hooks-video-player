@@ -1,11 +1,8 @@
 import React from 'react';
 
-import withLink from '../PlaylistItem/PlaylistItem.withLink';
 import PlaylistItem from '../PlaylistItem';
 
 import StyledPlaylistItems from '../../../../theme/PlaylistItems.styles';
-
-const PlaylistItemWithLink = withLink(PlaylistItem);
 
 const PlaylistItems = ({
   active,
@@ -14,7 +11,7 @@ const PlaylistItems = ({
   return (
     <StyledPlaylistItems>
       {videos.map((video) => (
-        <PlaylistItemWithLink
+        <PlaylistItem
           key={video.id}
           video={video}
           active={video.id === active.id ? true : false}
