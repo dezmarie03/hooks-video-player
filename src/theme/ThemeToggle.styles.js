@@ -14,6 +14,14 @@ const StyledThemeToggle = styled.div`
     width: 40px;
     height: 24px;
     margin-left: .5rem;
+    transition: 0.4s;
+    box-shadow: 0 0 0 2px transparent;
+    border-radius: 30px;
+  }
+
+  .switch:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px ${props => props.theme.textColor};
   }
 
   .slider {
